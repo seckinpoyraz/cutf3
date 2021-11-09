@@ -9,7 +9,14 @@
 	<link rel="stylesheet" type="text/css" href="https://seckinpoyraz.com/ctufsec3/css/reset.css">
 	<link rel="stylesheet" type="text/css" href="https://seckinpoyraz.com/ctufsec3/style.css?v=1.0.0">
 	<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-	<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+	<script>
+		MathJax = {
+		  options: {
+		    enableMenu: false
+		  }
+		};
+	</script>
+	<script id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
 
 	<!-- favicon -->
@@ -28,13 +35,19 @@
 
 	gtag('config', 'UA-66107833-1');
 	</script>
+
+	<style>
+		.MJX-TEX {
+		  pointer-events: none !important;
+		}
+	</style>
 </head>
 
 <body>
 
 <div class="container">
 	
-	<h1 class="title">ÇÜTF Puan Hesaplama Sistemi</h1>
+	<h1 class="title">ÇÜTF Not Hesaplama Sistemi</h1>
 
 	<div class="sinif-secimi">
 		
@@ -299,8 +312,8 @@
 
 	</div><!-- .alt-box -->
 
-	<div class="alt-box redd">
-		<strong>Sorumluluk Reddi Beyanı: </strong> Çukurova Üniversitesi Tıp Fakültesi Dönem 1/2/3 Puan Hesaplama Sistemi <strong>("Sistem")</strong>, fakültenin bir öğrencisi olan Seçkin Poyraz tarafından, diğer tüm öğrencilere kolaylık sağlaması amacıyla oluşturulmuştur. Sistem'in, Çukurova Üniversitesi Rektörlüğü ve/ya Çukurova Üniversitesi Tıp Fakültesi Dekanlığı ile hiçbir ilgisi yoktur. Sistem'in kullandığı veriler Çukurova Üniversitesi Tıp Fakültesi Dekanlığı'nın web sitesinde yayımladığı <a href="https://tip.cu.edu.tr/storage/Mevzuat/2021-2022%20%C3%87.%C3%9C.T%C4%B1p%20Fak%C3%BCltesi%20E%C4%9Fitim-%C3%96%C4%9Fretim%20ve%20S%C4%B1nav%20Y%C3%B6nergesi.pdf" target="_blank">Resmi Mevzuat</a> ve Ders Programları tarafından sağlanmaktadır. Sistemin gösterdiği sonuç her ne kadar kesin doğruluk payına sahip olsa da; doğruluğundan emin olmak için puanınızı kendiniz de hesaplamanız gerekmektedir. Doğabilecek olumsuz sonuçlardan Seçkin Poyraz sorumlu değildir. Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.
+	<div class="alt-box redd" style="margin-bottom:150px">
+		<strong>Sorumluluk Reddi Beyanı: </strong> Çukurova Üniversitesi Tıp Fakültesi Dönem 1/2/3 Not Hesaplama Sistemi <strong>("Sistem")</strong>, fakültenin bir öğrencisi olan Seçkin Poyraz tarafından, diğer tüm öğrencilere kolaylık sağlaması amacıyla oluşturulmuştur. Sistem'in, Çukurova Üniversitesi Rektörlüğü ve/ya Çukurova Üniversitesi Tıp Fakültesi Dekanlığı ile hiçbir ilgisi yoktur. Sistem'in kullandığı veriler Çukurova Üniversitesi Tıp Fakültesi Dekanlığı'nın web sitesinde yayımladığı <a href="https://tip.cu.edu.tr/storage/Mevzuat/2021-2022%20%C3%87.%C3%9C.T%C4%B1p%20Fak%C3%BCltesi%20E%C4%9Fitim-%C3%96%C4%9Fretim%20ve%20S%C4%B1nav%20Y%C3%B6nergesi.pdf" target="_blank">Resmi Mevzuat</a> ve Ders Programları tarafından sağlanmaktadır. Sistemin gösterdiği sonuç her ne kadar kesin doğruluk payına sahip olsa da; doğruluğundan emin olmak için notunuzu kendiniz de hesaplamanız gerekmektedir. Doğabilecek olumsuz sonuçlardan Seçkin Poyraz sorumlu değildir. Sistemi kullanarak bu şartları kabul etmiş sayılırsınız.
 		<br><br>
 		Sistem'le ilgili <b>öneri/istek/şikayet</b> taleplerinizi <a href="mailto:dr@seckinpoyraz.com">dr@seckinpoyraz.com</a> adresine yapabilirsiniz. Sistem'i kullandığınız için teşekkür eder, iyi çalışmalar dilerim.
 	</div>
@@ -492,11 +505,10 @@ function hesapla(){
 
 	}
 
-	
-
 }
 
 $(document).ready(function(){
+
 	var c_kom1 = Cookies.get(cookie_prefix+"kom1"),
 		c_prat1 = Cookies.get(cookie_prefix+"prat1"),
 		c_kom2 = Cookies.get(cookie_prefix+"kom2"),
