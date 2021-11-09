@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+	list-style: none;
+}
+
+body{
+	background: #F6F6F6;
+}
+
+.container{
+	width: 950px;
+	margin: auto;
+	text-align: center;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 30px;
+}
+
+.container .title{
+	font-weight: 700;
+	color: #414141;
+	font-size: 40px;
+}
+
+.container .sinif-secimi{
+	padding-top: 25px;
+}
+
+.container .sinif-secimi nav ul{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	column-gap: 30px;
+}
+
+.container .sinif-secimi nav ul li.selected{
+	font-weight: 900;
+	color: #C30000;
+}
+
+.container .sinif-secimi nav ul li a{
+	font-weight: 700;
+	color: #0073C3;
+}
+
+.container .big-box{
+	margin: 40px auto;
+	padding: 23px;
+	border-radius: 5px;
+	border: solid thin #E4E4E4;
+	background: #FFF;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.container .big-box .left-side{
+	width: 60%;
+}
+
+.container .big-box .left-side table input{
+	width: 80px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	text-align: center;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+.container .big-box .left-side table th{
+	background-color: #E8E8E8;
+	padding: 10px;
+	font-weight: 700;
+	font-size: 13px;
+	vertical-align: middle;
+}
+
+.container .big-box .left-side table th:last-child{
+	
+}
+
+.container .big-box .left-side table tr{
+	border: solid thin #CFCFCF;
+}
+
+.container .big-box .left-side table tr td{
+	padding: 10px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.container .big-box .left-side table tr td:first-child{
+	width: 120px;
+}
+
+.container .big-box .left-side table tr td:nth-child(4),
+.container .big-box .left-side table tr td:nth-child(5)
+{
+	width: 60px;
+	font-style: italic;
+}
+
+.container .big-box .left-side table tr td.kurul{
+	
+}
+
+.container .big-box .left-side table tr.hekimlik{
+	background-color: #E7FFF6;
+}
+
+.container .big-box .left-side table tr.final{
+	background-color: #F7F7F7;
+}
+
+.container .big-box .left-side table tr.final .kurul{
+	font-weight: 700;
+	color: #900000;
+}
+
+.akts{
+	font-style: italic;
+	font-size: 10px;
+	display: block;
+	padding-top: 6px;
+	letter-spacing: 1px;
+}
+
+.container .big-box .right-side{
+	text-align: center;
+	width: 40%;
+	position: relative;
+}
+
+.container .big-box .right-side .sonuclar .sonuc{
+	border: solid thin #CFCFCF;
+	margin-bottom: 15px;
+}
+
+.container .big-box .right-side .sonuclar .sonuc div:first-child{
+	font-weight: 600;
+	font-size: 15px;
+	padding: 13px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	border-bottom: solid thin #CFCFCF;
+	background-color: #F6F6F6;
+}
+
+.container .big-box .right-side .sonuclar .sonuc div:last-child{
+	padding: 13px;
+	font-weight: 800;
+	font-size: 35px;
+	color: #474747;
+}
+
+.reset{
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-weight: 800;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.container .alt-box{
+	margin: 40px auto;
+	padding: 23px;
+	border-radius: 5px;
+	border: solid thin #E4E4E4;
+	background: #FFF;
+	box-shadow: 0 0 10px rgba(0,0,0,.1);
+	overflow-x: auto;
+}
+
+.container .alt-box .degerler{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	text-align: center;
+}
+
+.container .alt-box .degerler table th{
+	background-color: #E8E8E8;
+	padding: 10px;
+	font-weight: 700;
+	font-size: 13px;
+	vertical-align: middle;
+	width: 150px;
+}
+
+.container .alt-box .degerler table tr{
+	border: solid thin #CFCFCF;
+}
+
+.container .alt-box .degerler table tr td{
+	padding: 10px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.container .alt-box .degerler table tr:nth-child(2n+1){
+	background-color: #F8F8F8;
+}
+
+.container .alt-box .degerler table tr:hover{
+	background-color: #FFFFED;
+}
+
+.redd{
+	line-height: 20px;
+	font-size: 14px;
+}
+
+a{
+	font-weight: 700;
+	color: #008DB0;
+	text-decoration: underline;
+}
