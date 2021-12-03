@@ -1,3 +1,3 @@
-# ÇÜTF Dönem 3 Puan Hesaplama Sistemi
+# ÇÜTF Dönem 3 Not Hesaplama Sistemi
  
 https://seckinpoyraz.com/cutf3
