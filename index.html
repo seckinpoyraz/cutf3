@@ -722,7 +722,7 @@ $("input[type=number]").on("input", function(){
 });
 
 $("#temizle").click(function(){
-	$("input[type=number]").val("");
+	$("input[type=number]").not(".sinput").val("");
 	Cookies.remove(cookie_prefix+"kom1", { path: cookie_path });
 	Cookies.remove(cookie_prefix+"prat1", { path: cookie_path });
 	Cookies.remove(cookie_prefix+"kom2", { path: cookie_path });
