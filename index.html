@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
 	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
 	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.5/dist/sweetalert2.all.min.js"></script>
 
 	<!-- favicon -->
 	<link rel="icon" type="image/png" sizes="192x192"  href="https://seckinpoyraz.com/ctufsec3/favicon/android-icon-192x192.png">
@@ -23,13 +24,13 @@
 	<meta name="theme-color" content="#ffffff">
 
 	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-66107833-1"></script>
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0C7PBXV9TV"></script>
 	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
 
-	gtag('config', 'UA-66107833-1');
+	  gtag('config', 'G-0C7PBXV9TV');
 	</script>
 
 	<!-- To automatically render math in text elements, include the auto-render extension: -->
@@ -573,6 +574,14 @@ function hesapla(){
 }
 
 $(document).ready(function(){
+
+	Swal.fire({
+	  title: 'DUYURU',
+	  html: '<p style="text-align:left;font-size:17px;">Herkese merhaba değerli ÇÜTF Not Hesaplama Sistemi kullanıcıları, öncelikle bu sistemi kâr amacı gütmeden tamamen okul arkadaşlarıma kolaylık sağlamak adına kurduğum <i>2018 yılından bu yana</i> benimle birlikte bu sistemin gelişmesine katkıda bulunan ve sistemi kullanan tüm arkadaşlarıma <b>sonsuz teşekkürlerimi</b> sunuyorum. Sizin de bildiğiniz üzere yakın zamanda Dekanlık bu sisteme <i>benzer bir sistem</i> kuracağını duyurdu :) Geç verilen bir karar olsa da atılması gereken bir adımdı. Kendi sistemim hakkında yetkilileri bilgilendirmek ve yeni mevzuattaki eksikleri açığa kavuşturmak adına yaptığım Dekanlık ziyaretinde benim yaptığım bu sistemin <strong>"etik olmadığı"</strong> söylendi. Böyle bir tepki yerine kendi öğrencilerinin yaptığı halihazırda var olan bu sisteme destek olup resmileştirmelerini ve daha açık bir mevzuat hazırlamalarını beklerdim ama maalesef her zaman işler bu şekilde yürümüyor. Bu sistemi elimden geldiğince devam ettirmeye ve sizlerden aldığım geri dönüşlerle güncellemeye devam edeceğim. Umarım sistem bu 4 yıllık süreçte tüm dönemlere faydalı olabilmiştir. Herkese tıp fakültesi eğitim hayatlarında bol <strong>"GEÇTİN"</strong>li yıllar dilerim. İsteklerinizi <a href="mailto:dr@seckinpoyraz.com">dr@seckinpoyraz.com</a> adresinden bana iletmeye devam edebilirsiniz. Teşekkürler.</p>',
+	  showCloseButton: true,
+	  confirmButtonText: 'Teşekkürler!'
+	});
+
 	$.get("https://seckinpoyraz.com/redd.html", function(data){
 		$("#sorumlulukreddi").html(data);
 	});
