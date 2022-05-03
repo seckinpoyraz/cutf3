@@ -1,31 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr" dir="ltr">
 <head>
-	<meta name="robots" content="index,follow">
-	<meta charset="utf-8">
-	<meta name="author" content="seckinpoyraz.com" />
-	<meta name="description" content="ÇÜTF Dönem 3 öğrencileri için Seçkin Poyraz tarafından hazırlanmış not hesaplama sistemi. Bu siteden notunuzu hesaplayıp sınıfı geçip geçmediğiniz hakkında fikir sahibi olabilirsiniz." />
-	<meta name="keywords" content="seçkin, poyraz, not, hesaplama, dönem, cutf, çütf, sınıf, geçme, kalma, final, komite, kurul, çukurova, tıp, fakülte, puan, bütünleme, mevzuat, ders, sistem" />
-	<link rel="canonical" href="https://seckinpoyraz.com/cutf3" />
-	<meta name="viewport" content="width=device-width,maximum-scale=1.0" />
-	<title>ÇÜTF Dönem 3 Not Hesaplama Sistemi</title>
-	<link rel="stylesheet" type="text/css" href="https://seckinpoyraz.com/ctufsec3/css/reset.css">
-	<link rel="stylesheet" type="text/css" href="https://seckinpoyraz.com/ctufsec3/style.css?v=2.0">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css" integrity="sha384-R4558gYOUz8mP9YWpZJjofhk+zx0AS11p36HnD2ZKj/6JR5z27gSSULCNHIRReVs" crossorigin="anonymous">
-	<script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js" integrity="sha384-z1fJDqw8ZApjGO3/unPWUPsIymfsJmyrDVWC8Tv/a1HeOtGmkwNd/7xUS0Xcnvsx" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.5/dist/sweetalert2.all.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="robots" content="index,follow">
+    <meta name="viewport" content="width=device-width,maximum-scale=1.0" />
+    <title>ÇÜTF Dönem 3 Not Hesaplama Sistemi</title>
+    <meta name="author" content="seckinpoyraz.com" />
+    <meta name="description" content="ÇÜTF Dönem 3 öğrencileri için Seçkin Poyraz tarafından hazırlanmış not hesaplama sistemi. Bu siteden notunuzu hesaplayıp sınıfı geçip geçmediğiniz hakkında fikir sahibi olabilirsiniz." />
+    <meta name="keywords" content="seçkin, poyraz, not, hesaplama, dönem, cutf, çütf, sınıf, geçme, kalma, final, komite, kurul, çukurova, tıp, fakülte, puan, bütünleme, mevzuat, ders, sistem" />
+    <link rel="canonical" href="https://seckinpoyraz.com/cutf3" />
 
-	<!-- favicon -->
-	<link rel="icon" type="image/png" sizes="192x192"  href="https://seckinpoyraz.com/ctufsec3/favicon/android-icon-192x192.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="https://seckinpoyraz.com/ctufsec3/favicon/favicon-32x32.png">
-	<link rel="icon" type="image/png" sizes="96x96" href="https://seckinpoyraz.com/ctufsec3/favicon/favicon-96x96.png">
-	<link rel="icon" type="image/png" sizes="16x16" href="https://seckinpoyraz.com/ctufsec3/favicon/favicon-16x16.png">
-	<meta name="theme-color" content="#ffffff">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+    <link rel="icon" type="image/png" sizes="192x192" href="https://seckinpoyraz.com/ctufsec3/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://seckinpoyraz.com/ctufsec3/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://seckinpoyraz.com/ctufsec3/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://seckinpoyraz.com/ctufsec3/favicon/favicon-16x16.png">
+    <meta name="theme-color" content="#ffffff">
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=G-0C7PBXV9TV"></script>
-	<script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-0C7PBXV9TV" type="text/javascript"></script>
+    <script type="text/javascript">
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
@@ -33,528 +28,610 @@
 	  gtag('config', 'G-0C7PBXV9TV');
 	</script>
 
-	<!-- To automatically render math in text elements, include the auto-render extension: -->
-    <script defer src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/contrib/auto-render.min.js" integrity="sha384-+XBljXPPiv+OzfbB3cVmLHf4hdUFHlWNZN5spNQ7rmHTXpd7WvJum6fIACpNNfIR" crossorigin="anonymous"
-        onload="renderMathInElement(document.body);"></script>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-    <style>
-    	.duyuru{
-    		margin: auto;
-    		margin-top: 30px; 
-    		margin-bottom: -20px; 		
-    		background-color: #FFFEDD;
-    		border-radius: 6px;
-    		padding: 13px;
-    		padding-left: 40px;
-    		padding-right: 40px;
-    		border: solid thin #E2E0B0;
-    		line-height: 23px;
-			font-size: 14px;
-			color: #666666;
-			letter-spacing: 0.1px;
-    	}
+        /* Chrome, Safari, Edge, Opera */
+        input::-webkit-outer-spin-button,
+        input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+            margin: 0;
+        }
+
+        /* Firefox */
+        input[type=number] {
+            -moz-appearance: textfield;
+        }
+
+        body{
+            font-family: 'Source Sans Pro',sans-serif;
+            background: #F4F4F4
+        }
+
+        .container{
+            width: 1000px;
+            margin: auto;
+        }
+
+        .titlemenu{
+            display: flex;
+            flex-direction: column;
+            width: 900px;
+            margin: 30px auto;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .titlemenu .title{
+            font-size: 35px;
+            font-weight: 800;
+            color:rgba(22, 22, 22, 0.8);
+        }
+
+        .titlemenu .title span{
+            color:rgb(156, 0, 0)
+        }
+
+        .titlemenu .menu{
+            margin: auto;
+            margin-top: 10px;
+        }
+
+        .titlemenu .menu ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            list-style: none;
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            column-gap: 25px;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .titlemenu .menu ul li.selected{
+            color:rgb(156, 0, 0);
+            font-weight: 800;
+        }
+
+        .big-box{
+            width: 900px;
+            margin: 2% auto;
+            border-radius: 8px;
+            background-color: #FFF;
+            border: solid thin #D9D9D9;
+            box-shadow: 0 0 20px rgba(0,0,0,.1);
+        }
+
+        .big-box .content{
+            padding: 35px;
+        }
+
+        .styled-table{
+            border-collapse: collapse;
+            margin: 0;
+            padding: 0;
+            margin: auto;
+            vertical-align: middle;
+            width: 100%;
+            border: thin solid rgba(237, 237, 237);
+        }
+
+        .styled-table thead{
+            font-weight: 600;
+            color: rgb(4, 4, 4, .7);
+        }
+
+        .styled-table tbody tr td:first-child{
+            text-align: left;
+            font-weight: 600;
+            color: rgb(4, 4, 4, .7);
+            padding-left: 10px;
+        }
+
+        .styled-table .dark1{
+            background-color: rgba(248, 248, 248, 0.6);
+        }
+
+        .styled-table .dark2{
+            background-color: rgba(254, 255, 187, 0.2);
+        }
+
+        .styled-table .dark3{
+            background-color: rgba(254, 255, 187, 0.2);
+        }
+
+        .styled-table .dark4{
+            background-color: rgba(107, 161, 255, 0.1);
+        }
+
+        .styled-table th,
+        .styled-table td {
+            padding: 5px;
+        }
+
+        .styled-table tr td {
+            text-align: center;
+            border-bottom: thin solid rgba(237, 237, 237);
+        }
+
+        .styled-table td:nth-child(1){
+            width: 18%;
+        }
+
+        .styled-table td:nth-child(2){
+            width: 15%;
+        }
+
+        .styled-table td:nth-child(3){
+            width: 15%;
+        }
+
+        .styled-table td:nth-child(4){
+            width: 30%;
+        }
+
+        .styled-table td:nth-child(5){
+            width: 12%;
+        }
+
+        .styled-table td:nth-child(6){
+            width: 12%;
+        }
+
+        .inside-table{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            margin-top: 5px;
+            margin-bottom: 3px;
+            column-gap: 3px;
+        }
+
+        input{
+            text-align: center;
+        }
+
+        .solsag{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+        }
+
+        .sonuclar{
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .sonuclar .sonuc{
+            border: solid thin #CFCFCF;
+            border-radius: 5px;
+            width: 360px;
+            margin: auto;
+            margin-bottom: 15px;
+            box-shadow: 0 0 15px rgba(104, 104, 104, 0.1);
+        }
+
+        .sonuclar .sonuc div:first-child{
+            font-weight: 600;
+            font-size: 15px;
+            padding: 13px;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            border-bottom: solid thin #CFCFCF;
+            background-color: #F6F6F6;
+            border-top-left-radius: 5px;
+            border-top-right-radius: 5px;
+        }
+
+        .sonuclar .sonuc div:last-child{
+            padding: 13px;
+            font-weight: 800;
+            font-size: 35px;
+            color: #474747;
+        }
     </style>
 </head>
 
 <body>
-
 <div class="container">
-	
-	<h1 class="title">ÇÜTF Not Hesaplama Sistemi</h1>
 
-	<div class="sinif-secimi">
-		
-		<nav>
-			<ul>
-				<li><a href="https://seckinpoyraz.com/cutf">Dönem 1</a></li>
-				<li><a href="https://seckinpoyraz.com/cutf2">Dönem 2</a></li>
-				<li class="selected">Dönem 3</li>
-			</ul>
-		</nav>
+<div class="titlemenu">
+    <h1 class="title">ÇÜTF <span>Dönem 3</span> Not Hesaplama Sistemi</h1>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://seckinpoyraz.com/cutf">Dönem 1</a></li>
+            <li><a href="https://seckinpoyraz.com/cutf2">Dönem 2</a></li>
+            <li class="selected">Dönem 3</li>
+        </ul>
+    </nav>
+</div>
+<div class="big-box">
+    <div class="content">
+        <table class="styled-table">
+            <thead>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>Teorik Notu</td>
+                    <td>Entegre Notu</td>
+                    <td>
+                        <div>Pratik Notu</div>
+                        <div class="inside-table">
+                            <div>TBİK</div>
+                            <div>TMİK</div>
+                            <div>PAT</div>
+                        </div>
+                    </td>
+                    <td>Kurul Pratik Notu</td>
+                    <td>KSSN</td>
+                </tr>
+            </thead>
 
-	</div><!-- .sinif-secimi -->
+            <tbody>
+                <tr class="dark1">
+                    <td>1. Kurul</td>
+                    <td><input type="number" id="kurul1_teorik" placeholder="0" class="form-control" /></td>
+                    <td><input type="number" id="kurul1_entegre" placeholder="0" class="form-control" /></td>
+                    <td>
+                        <div class="inside-table">
+                            <div><input type="number" id="kurul1_tbik" placeholder="0" class="form-control" /></div>
+                            <div><input type="number" id="kurul1_tmik" placeholder="0" class="form-control" /></div>
+                            <div><input type="number" id="kurul1_pat" placeholder="0" class="form-control" /></div>
+                        </div>
+                    </td>
+                    <td><span id="kurul1_pratik_notu">0.00</span></td>
+                    <td><span id="kssn1">0.00</span></td>
+                </tr>
+                <tr class="dark1">
+                    <td>2. Kurul</td>
+                    <td><input type="number" id="kurul2_teorik" placeholder="0" class="form-control" /></td>
+                    <td><input type="number" id="kurul2_entegre" placeholder="0" class="form-control" /></td>
+                    <td>
+                        <div class="inside-table">
+                            <div><input type="number" id="kurul2_tbik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul2_tmik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul2_pat" placeholder="0" class="form-control" /></div>
+                        </div>
+                    </td>
+                    <td><span id="kurul2_pratik_notu">0.00</span></td>
+                    <td><span id="kssn2">0.00</span></td>
+                </tr>
+                <tr class="dark1">
+                    <td>3. Kurul</td>
+                    <td><input type="number" id="kurul3_teorik" placeholder="0" class="form-control" /></td>
+                    <td><input type="number" id="kurul3_entegre" placeholder="0" class="form-control" /></td>
+                    <td>
+                        <div class="inside-table">
+                            <div><input type="number" id="kurul3_tbik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul3_tmik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul3_pat" placeholder="0" class="form-control" /></div>
+                        </div>
+                    </td>
+                    <td><span id="kurul3_pratik_notu">0.00</span></td>
+                    <td><span id="kssn3">0.00</span></td>
+                </tr>
+                <tr class="dark1">
+                    <td>4. Kurul</td>
+                    <td><input type="number" id="kurul4_teorik" placeholder="0" class="form-control" /></td>
+                    <td><input type="number" id="kurul4_entegre" placeholder="0" class="form-control" /></td>
+                    <td>
+                        <div class="inside-table">
+                            <div><input type="number" id="kurul4_tbik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul4_tmik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul4_pat" placeholder="0" class="form-control" /></div>
+                        </div>
+                    </td>
+                    <td><span id="kurul4_pratik_notu">0.00</span></td>
+                    <td><span id="kssn4">0.00</span></td>
+                </tr>
+                <tr class="dark1">
+                    <td>5. Kurul</td>
+                    <td><input type="number" id="kurul5_teorik" placeholder="0" class="form-control" /></td>
+                    <td><input type="number" id="kurul5_entegre" placeholder="0" class="form-control" /></td>
+                    <td>
+                        <div class="inside-table">
+                            <div><input type="number" id="kurul5_tbik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul5_tmik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul5_pat" placeholder="0" class="form-control" /></div>
+                        </div>
+                    </td>
+                    <td><span id="kurul5_pratik_notu">0.00</span></td>
+                    <td><span id="kssn5">0.00</span></td>
+                </tr>
+                <tr class="dark1">
+                    <td>6. Kurul</td>
+                    <td><input type="number" id="kurul6_teorik" placeholder="0" class="form-control" /></td>
+                    <td><input type="number" id="kurul6_entegre" placeholder="0" class="form-control" /></td>
+                    <td>
+                        <div class="inside-table">
+                            <div><input type="number" id="kurul6_tbik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul6_tmik" class="form-control" disabled="disabled" /></div>
+                            <div><input type="number" id="kurul6_pat" placeholder="0" class="form-control" /></div>
+                        </div>
+                    </td>
+                    <td><span id="kurul6_pratik_notu">0.00</span></td>
+                    <td><span id="kssn6">0.00</span></td>
+                </tr>
+                <tr class="dark2">
+                    <td>Entegre Oturum Notu</td>
+                    <td><span id="entegre">0.00</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="dark2">
+                    <td>Hasta-Hekim</td>
+                    <td><input type="number" id="hasta-hekim" placeholder="0" class="form-control" /></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="dark2">
+                    <td>SPAK Notu</td>
+                    <td><input type="number" id="spak" placeholder="0" class="form-control" /></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="dark2">
+                    <td>TBL Notu</td>
+                    <td><input type="number" id="tbl" placeholder="0" class="form-control" /></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="dark3">
+                    <td>Hekimlik Uygulaması Notu</td>
+                    <td><span id="hu">0.00</span></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="dark4">
+                    <td>FİNAL Notu</td>
+                    <td><input type="number" id="final" placeholder="0" class="form-control" /></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td><button onclick="resetValues()" class="btn btn-primary btn-lg">TEMİZLE</button></td>
+                </tr>
+            </tbody>
+        </table>
 
-	<div class="duyuru">
-		<p><b>⚠️ ÖNEMLİ DUYURU:</b> Değerli Dönem 1/2/3 Öğrencileri, <u>ders programlarında beyan edilen pratik ders saatleri ile öğrencilerin girdiği toplam pratik ders saatleri arasında tutarsızlık bulunmaktadır.</u> Resmi Mevzuat'ta pratik ders saatleri hakkında hangi verinin baz alınacağı açıkça belirtilmediğinden; Dekanlık'tan bu konuda bilgi alınana kadar <b>pratik ders saatlerini kendiniz hesaplayıp aşağıdaki tabloya girmeniz</b> doğru bir sonuç elde etmeniz için önem arz etmektedir. Pratik ders saatleri hakkında bilgi sahibi olan öğrencilerin <a href="mailto:dr@seckinpoyraz.com">dr@seckinpoyraz.com</a> adresinden bana bilgi vermelerini rica ederim. Teşekkürler. ⚠️</p>
-		<p style="padding-top:20px;font-weight:900;font-size:25px;color:#A60000">NOTUNUZU HESAPLAMADAN ÖNCE LÜTFEN OKUYUN !</p>
-	</div>
+        <div class="solsag">
+            <div class="sol">
+                <div class="sonuclar">
+                    <div class="sonuc">
+                        <div>Yıl İçi Değerlendirme Notu:</div>
+                        <div><span id="yidn">0.00</span></div>
+                    </div>
+                    <div class="sonuc">
+                        <div>Sınıf Geçme Notu:</div>
+                        <div><span id="sgn">0.00</span></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sag">
+                <div class="sonuclar">
+                    <div class="sonuc">
+                        <div>Finalden Alman Gereken Ortalama:</div>
+                        <div><span id="alman_gereken">0.00</span></div>
+                    </div>
+                    <div class="sonuc">
+                        <div>Durum:</div>
+                        <div id="durum"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-	<div class="alt-box">
-		
-		<div class="degerler">
+    </div><!-- .content -->
+</div><!-- .big-box -->
 
-			<div class="akts_degerleri">
-				<table>
-					<tr>
-						<th>Tür</th>
-						<th>AKTS Değeri</th>
-					</tr>
-					<tr>
-						<td>1. Kurul</td>
-						<td class="akts1"></td>
-					</tr>
-					<tr>
-						<td>2. Kurul</td>
-						<td class="akts2"></td>
-					</tr>
-					<tr>
-						<td>3. Kurul</td>
-						<td class="akts3"></td>
-					</tr>
-					<tr>
-						<td>4. Kurul</td>
-						<td class="akts4"></td>
-					</tr>
-					<tr>
-						<td>5. Kurul</td>
-						<td class="akts5"></td>
-					</tr>
-					<tr>
-						<td>6. Kurul</td>
-						<td class="akts6"></td>
-					</tr>
-					<tr>
-						<td>Hekimlik Uyg.</td>
-						<td class="aktshekimlik"></td>
-					</tr>
-				</table>
-			</div>
-
-			<div class="ders_saatleri">
-				<table>
-					<tr>
-						<th>Kurul</th>
-						<th>Teorik Ders Saati</th>
-						<th>Pratik Ders Saati</th>
-					</tr>
-					<tr>
-						<td>1. Kurul</td>
-						<td><input type="number" class="sinput" id="teoriksayi1" /></td>
-						<td><input type="number" class="sinput" id="pratiksayi1" /></td>
-					</tr>
-					<tr>
-						<td>2. Kurul</td>
-						<td><input type="number" class="sinput" id="teoriksayi2" /></td>
-						<td><input type="number" class="sinput" id="pratiksayi2" /></td>
-					</tr>
-					<tr>
-						<td>3. Kurul</td>
-						<td><input type="number" class="sinput" id="teoriksayi3" /></td>
-						<td><input type="number" class="sinput" id="pratiksayi3" /></td>
-					</tr>
-					<tr>
-						<td>4. Kurul</td>
-						<td><input type="number" class="sinput" id="teoriksayi4" /></td>
-						<td><input type="number" class="sinput" id="pratiksayi4" /></td>
-					</tr>
-					<tr>
-						<td>5. Kurul</td>
-						<td><input type="number" class="sinput" id="teoriksayi5" /></td>
-						<td><input type="number" class="sinput" id="pratiksayi5" /></td>
-					</tr>
-					<tr>
-						<td>6. Kurul</td>
-						<td><input type="number" class="sinput" id="teoriksayi6" /></td>
-						<td><input type="number" class="sinput" id="pratiksayi6" /></td>
-					</tr>
-				</table>
-				<button class="sreset" id="sayilarreset">SIFIRLA</button>
-			</div>
-
-		</div>
-
-		
-		<h1 style="font-weight:800;color:#D80000;padding-top:30px;text-decoration:underline;font-size:20px">PRATİK DERS SAATLERİNİZİ KONTROL ETMEYİ UNUTMAYIN !!!</h1>
-		
-
-	</div><!-- .alt-box -->
-
-	<div class="big-box">
-		
-		<div class="left-side">
-			
-			<table>
-				<tr>
-				    <th>Sınav Türü</th>
-				    <th>Teorik Puanı</th>
-				    <th>Pratik Puanı</th>
-				    <th>KSSN</th>
-				    <th>KSSN Ort.</th>
-			    </tr>
-			    <tr>
-			    	<td class="kurul">1. Kurul <span class="akts">(AKTS: <span class="akts1"></span>)</span></td>
-			    	<td><input type="number" id="kurul1" /></td>
-			    	<td><input type="number" id="pratik1" /></td>
-			    	<td id="kssn1">0.00</td>
-			    	<td id="kssn1_ort">0.00</td>
-			    </tr>
-			    <tr>
-			    	<td class="kurul">2. Kurul <span class="akts">(AKTS: <span class="akts2"></span>)</span></td>
-			    	<td><input type="number" id="kurul2" /></td>
-			    	<td><input type="number" id="pratik2" /></td>
-			    	<td id="kssn2">0.00</td>
-			    	<td id="kssn2_ort">0.00</td>
-			    </tr>
-			    <tr>
-			    	<td class="kurul">3. Kurul <span class="akts">(AKTS: <span class="akts3"></span>)</span></td>
-			    	<td><input type="number" id="kurul3" /></td>
-			    	<td><input type="number" id="pratik3" /></td>
-			    	<td id="kssn3">0.00</td>
-			    	<td id="kssn3_ort">0.00</td>
-			    </tr>
-			    <tr>
-			    	<td class="kurul">4. Kurul <span class="akts">(AKTS: <span class="akts4"></span>)</span></td>
-			    	<td><input type="number" id="kurul4" /></td>
-			    	<td><input type="number" id="pratik4" /></td>
-			    	<td id="kssn4">0.00</td>
-			    	<td id="kssn4_ort">0.00</td>
-			    </tr>
-			    <tr>
-			    	<td class="kurul">5. Kurul <span class="akts">(AKTS: <span class="akts5"></span>)</span></td>
-			    	<td><input type="number" id="kurul5" /></td>
-			    	<td><input type="number" id="pratik5" /></td>
-			    	<td id="kssn5">0.00</td>
-			    	<td id="kssn5_ort">0.00</td>
-			    </tr>
-			    <tr>
-			    	<td class="kurul">6. Kurul <span class="akts">(AKTS: <span class="akts6"></span>)</span></td>
-			    	<td><input type="number" id="kurul6" /></td>
-			    	<td><input type="number" id="pratik6" /></td>
-			    	<td id="kssn6">0.00</td>
-			    	<td id="kssn6_ort">0.00</td>
-			    </tr>
-			    <tr class="hekimlik">
-			    	<td>Hekimlik Uygulaması <span class="akts">(AKTS: <span class="aktshekimlik"></span>)</span></td>
-			    	<td><input type="number" id="hekimlik" /></td>
-			    	<td>&nbsp;</td>
-			    	<td>&nbsp;</td>
-			    	<td>&nbsp;</td>
-			    </tr>
-			    <tr class="final">
-			    	<td class="kurul">1. Final/Büt</td>
-			    	<td><input type="number" id="final1" /></td>
-			    	<td>&nbsp;</td>
-			    	<td>&nbsp;</td>
-			    	<td>&nbsp;</td>
-			    </tr>
-			    <tr class="final">
-			    	<td class="kurul">2. Final/Büt</td>
-			    	<td><input type="number" id="final2" /></td>
-			    	<td>&nbsp;</td>
-			    	<td>&nbsp;</td>
-			    	<td>&nbsp;</td>
-			    </tr>
-			</table>
-
-		</div><!-- .left-side -->
-
-		<div class="right-side">
-			
-			<div class="sonuclar">
-
-				<div class="sonuc yidn">
-					<div>Yıl İçi Değerlendirme Notu:</div>
-					<div id="yidn">0.00</div>
-				</div>
-
-				<div class="sonuc sgn">
-					<div>Sınıf Geçme Notu:</div>
-					<div id="sgn">0.00</div>
-				</div>
-
-				<div class="sonuc gecmek_icin">
-					<div>Finalden Alman Gereken Ortalama:</div>
-					<div id="gecmek_icin">0.00</div>
-				</div>
-
-				<div class="sonuc durum">
-					<div>Durum:</div>
-					<div id="durum"></div>
-				</div>
-
-				<button class="reset" id="temizle">TEMİZLE</button>
-
-			</div>
-
-		</div><!-- .right-side -->
-
-	</div><!-- .big-box -->
-
-	<div class="alt-box">
-		
-		<div class="icerik">
-			<p>
-				<strong>Kurul Sonu Sınav Notu (KSSN):</strong> 
-				\[
-				\frac { ( Teorik Not \text{ x } Teorik Ders Saati) + (Pratik Not \text{ x } Pratik Ders Saati) } { Teorik Ders Saati + Pratik Ders Saati }
-				\]
-			</p>
-			<p style="padding-top:30px">
-				<strong>Yıl İçi Değerlendirme Notu (YİDN):</strong> 
-				\[
-				\tiny{
-				\frac { 
-					( KSSN1 \text{ x } AKTS1)
-					+
-					( KSSN2 \text{ x } AKTS2)
-					+
-					( KSSN3 \text{ x } AKTS3)
-					+
-					( KSSN4 \text{ x } AKTS4)
-					+
-					( KSSN5 \text{ x } AKTS5)
-					+
-					( KSSN6 \text{ x } AKTS6)
-					+
-					( Hekimlik Uyg. \text{ x } Hekimlik AKTS)
-				} 
-				{ AKTS1+AKTS2+AKTS3+AKTS4+AKTS5+AKTS6+Hekimlik AKTS }
-				}
-				\]
-			</p>
-			<p style="padding-top:30px">
-				<strong>Sınıf Geçme Notu:</strong> 
-				\[
-					( YiDN \text{ x } 0.65)
-					+
-					( Final Ortalaması \text{ x } 0.35)
-				\]
-			</p>
-			<p style="padding-top:30px">
-				<strong>Sınıfı Geçme: </strong> Sınıf Geçme Notu ≥ 59.5
-				<div style="display:block;padding-bottom:10px"></div>
-				<strong>Finalsiz Geçme: </strong> Tüm KSSN'ler ≥ 60 ve YİDN ≥ 79.5
-				<div style="display:block;padding-bottom:10px"></div>
-				<i>Finalsiz geçişlerde Sınıf Geçme Notu, YİDN olarak kabul edilir.</i>
-			</p>
-		</div>
-
-	</div><!-- .alt-box -->
-
-	<div class="alt-box redd" style="margin-bottom:150px;margin-top:70px;color:#656565">
-		<div id="sorumlulukreddi"></div>
-		<br><br>
-		<!-- Place this tag where you want the button to render. -->
-		<a class="github-button" href="https://github.com/seckinpoyraz/cutf3" data-color-scheme="no-preference: light; light: light; dark: light;" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star seckinpoyraz/cutf3 on GitHub">Star</a>
-		<a class="github-button" href="https://github.com/seckinpoyraz/cutf3/discussions" data-color-scheme="no-preference: light; light: light; dark: light;" data-size="large" aria-label="Discuss seckinpoyraz/cutf1 on GitHub">Discuss</a>
-	</div>
+<div class="big-box">
+    <div class="content">
+        <iframe src="https://seckinpoyraz.com/ctufsec3/donem3_akts.htm" style="display:block;width:650px;height:350px;margin:auto;" scrolling="no"></iframe>
+        <p style="text-align:center;font-style:italic">
+            Veriler dönem gruplarında paylaşılan Excel formatındaki not hesaplama uygulamasından alınmıştır.<br>Orada da belirtildiği gibi<br><span style="font-weight:600;color:rgb(126, 0, 0)">"Öğrenci işleri sistemi ile uyumsuzluklar olması halinde Öğrenci İşleri Sistemindeki değerler dikkate alınacaktır."</span>
+        </p>
+    </div><!-- .content -->
+</div><!-- .big-box -->
 
 </div><!-- .container -->
 
-<!-- Place this tag in your head or just before your close body tag. -->
-<script async defer src="https://buttons.github.io/buttons.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<script>
-var kaldin = '<span style="color:#F3F3F3;background-color:#2C2C2C;display:inline-block;padding:8px;border-radius:5px">YETERLİ DEĞİL</span>';
-var gectin = '<span style="color:#3AEF22;background-color:#2C2C2C;display:inline-block;padding:8px;border-radius:5px">GEÇTİN</span>';
-var finalsiz = '<span style="color:#EFFF38;background-color:#2C2C2C;display:inline-block;padding:8px;border-radius:5px">FİNALSİZ GEÇTİN</span>';
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+<script type="text/javascript">
+const kaldin = '<span style="color:#F3F3F3;background-color:#2C2C2C;display:inline-block;padding:8px;border-radius:5px">YETERLİ DEĞİL</span>';
+const gectin = '<span style="color:#3AEF22;background-color:#2C2C2C;display:inline-block;padding:8px;border-radius:5px">GEÇTİN</span>';
+const finalsiz = '<span style="color:#EFFF38;background-color:#2C2C2C;display:inline-block;padding:8px;border-radius:5px">FİNALSİZ GEÇTİN</span>';
 $("#durum").html(kaldin);
 
-const cookie_prefix = "d3_";
-const cookie_path = "/cutf3";
+const cookie_prefix = "d3x_";
 const cookie_expires = 300;
+const cookie_path = "/cutf3";
 
-//3. Sınıf Kurul Teorik ve Pratik Ders Saatleri
-const const_kurul1_teorik_sayisi = 152;
-const const_kurul1_pratik_sayisi = 14;
+const donem3 = {
+    kurul1_akts: 9,
+    kurul2_akts: 7,
+    kurul3_akts: 9,
+    kurul4_akts: 9,
+    kurul5_akts: 7,
+    kurul6_akts: 7,
+    hekimlik_akts: 12,
+    
+    kurul1_teorik_saat: 152,
+    kurul1_entegre_saat: 2,
+    kurul1_pratik_tbik_saat: 2,
+    kurul1_pratik_tmik_saat: 2,
+    kurul1_pratik_pat_saat: 10,
 
-const const_kurul2_teorik_sayisi = 105;
-const const_kurul2_pratik_sayisi = 16;
+    kurul2_teorik_saat: 105,
+    kurul2_entegre_saat: 4,
+    kurul2_pratik_tbik_saat: 0,
+    kurul2_pratik_tmik_saat: 0,
+    kurul2_pratik_pat_saat: 8,
 
-const const_kurul3_teorik_sayisi = 151;
-const const_kurul3_pratik_sayisi = 8;
+    kurul3_teorik_saat: 151,
+    kurul3_entegre_saat: 17,
+    kurul3_pratik_tbik_saat: 0,
+    kurul3_pratik_tmik_saat: 0,
+    kurul3_pratik_pat_saat: 4,
 
-const const_kurul4_teorik_sayisi = 154;
-const const_kurul4_pratik_sayisi = 16;
+    kurul4_teorik_saat: 154,
+    kurul4_entegre_saat: 4,
+    kurul4_pratik_tbik_saat: 0,
+    kurul4_pratik_tmik_saat: 0,
+    kurul4_pratik_pat_saat: 8,
 
-const const_kurul5_teorik_sayisi = 89;
-const const_kurul5_pratik_sayisi = 12;
+    kurul5_teorik_saat: 89,
+    kurul5_entegre_saat: 4,
+    kurul5_pratik_tbik_saat: 0,
+    kurul5_pratik_tmik_saat: 0,
+    kurul5_pratik_pat_saat: 6,
 
-const const_kurul6_teorik_sayisi = 108;
-const const_kurul6_pratik_sayisi = 8;
+    kurul6_teorik_saat: 108,
+    kurul6_entegre_saat: 2,
+    kurul6_pratik_tbik_saat: 0,
+    kurul6_pratik_tmik_saat: 0,
+    kurul6_pratik_pat_saat: 4,
 
-//3. Sınıf AKTS Değerleri
-const kurul1_akts = 10;
-const kurul2_akts = 7;
-const kurul3_akts = 10;
-const kurul4_akts = 9;
-const kurul5_akts = 6;
-const kurul6_akts = 6;
-const hekimlik_akts = 12;
-
-//Ders Saatleri ve AKTS Değerlerini Yazdır
-$("#teoriksayi1").val(const_kurul1_teorik_sayisi);
-$("#pratiksayi1").val(const_kurul1_pratik_sayisi);
-
-$("#teoriksayi2").val(const_kurul2_teorik_sayisi);
-$("#pratiksayi2").val(const_kurul2_pratik_sayisi);
-
-$("#teoriksayi3").val(const_kurul3_teorik_sayisi);
-$("#pratiksayi3").val(const_kurul3_pratik_sayisi);
-
-$("#teoriksayi4").val(const_kurul4_teorik_sayisi);
-$("#pratiksayi4").val(const_kurul4_pratik_sayisi);
-
-$("#teoriksayi5").val(const_kurul5_teorik_sayisi);
-$("#pratiksayi5").val(const_kurul5_pratik_sayisi);
-
-$("#teoriksayi6").val(const_kurul6_teorik_sayisi);
-$("#pratiksayi6").val(const_kurul6_pratik_sayisi);
-
-$(".akts1").html(kurul1_akts);
-$(".akts2").html(kurul2_akts);
-$(".akts3").html(kurul3_akts);
-$(".akts4").html(kurul4_akts);
-$(".akts5").html(kurul5_akts);
-$(".akts6").html(kurul6_akts);
-$(".aktshekimlik").html(hekimlik_akts);
-
-//Cookie Ayarlama Fonksiyonu
-function setCookies(){
-	var cc_kom1 = $("#kurul1").val(),
-		cc_prat1 = $("#pratik1").val(),
-		cc_kom2 = $("#kurul2").val(),
-		cc_prat2 = $("#pratik2").val(),
-		cc_kom3 = $("#kurul3").val(),
-		cc_prat3 = $("#pratik3").val(),
-		cc_kom4 = $("#kurul4").val(),
-		cc_prat4 = $("#pratik4").val(),
-		cc_kom5 = $("#kurul5").val(),
-		cc_prat5 = $("#pratik5").val(),
-		cc_kom6 = $("#kurul6").val(),
-		cc_prat6 = $("#pratik6").val(),
-		cc_hekim = $("#hekimlik").val(),
-		cc_fin1 = $("#final1").val(),
-		cc_fin2 = $("#final2").val(),
-		cc_kom1_teorik = $("#teoriksayi1").val(),
-		cc_kom1_pratik = $("#pratiksayi1").val(),
-		cc_kom2_teorik = $("#teoriksayi2").val(),
-		cc_kom2_pratik = $("#pratiksayi2").val(),
-		cc_kom3_teorik = $("#teoriksayi3").val(),
-		cc_kom3_pratik = $("#pratiksayi3").val(),
-		cc_kom4_teorik = $("#teoriksayi4").val(),
-		cc_kom4_pratik = $("#pratiksayi4").val(),
-		cc_kom5_teorik = $("#teoriksayi5").val(),
-		cc_kom5_pratik = $("#pratiksayi5").val(),
-		cc_kom6_teorik = $("#teoriksayi6").val(),
-		cc_kom6_pratik = $("#pratiksayi6").val();
-
-	Cookies.set(cookie_prefix+"kom1", cc_kom1, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"prat1", cc_prat1, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom2", cc_kom2, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"prat2", cc_prat2, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom3", cc_kom3, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"prat3", cc_prat3, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom4", cc_kom4, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"prat4", cc_prat4, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom5", cc_kom5, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"prat5", cc_prat5, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom6", cc_kom6, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"prat6", cc_prat6, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"hekim", cc_hekim, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"fin1", cc_fin1, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"fin2", cc_fin2, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom1_teorik", cc_kom1_teorik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom1_pratik", cc_kom1_pratik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom2_teorik", cc_kom2_teorik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom2_pratik", cc_kom2_pratik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom3_teorik", cc_kom3_teorik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom3_pratik", cc_kom3_pratik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom4_teorik", cc_kom4_teorik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom4_pratik", cc_kom4_pratik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom5_teorik", cc_kom5_teorik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom5_pratik", cc_kom5_pratik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom6_teorik", cc_kom6_teorik, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom6_pratik", cc_kom6_pratik, { expires: cookie_expires, path: cookie_path });
+    hasta_hekim_saat: 24,
+    spak_saat: 108,
+    tbl_saat: 14
 }
 
+const kurul1_toplam_pratik_saat = donem3.kurul1_pratik_tbik_saat+donem3.kurul1_pratik_tmik_saat+donem3.kurul1_pratik_pat_saat;
+const kurul2_toplam_pratik_saat = donem3.kurul2_pratik_tbik_saat+donem3.kurul2_pratik_tmik_saat+donem3.kurul2_pratik_pat_saat;
+const kurul3_toplam_pratik_saat = donem3.kurul3_pratik_tbik_saat+donem3.kurul3_pratik_tmik_saat+donem3.kurul3_pratik_pat_saat;
+const kurul4_toplam_pratik_saat = donem3.kurul4_pratik_tbik_saat+donem3.kurul4_pratik_tmik_saat+donem3.kurul4_pratik_pat_saat;
+const kurul5_toplam_pratik_saat = donem3.kurul5_pratik_tbik_saat+donem3.kurul5_pratik_tmik_saat+donem3.kurul5_pratik_pat_saat;
+const kurul6_toplam_pratik_saat = donem3.kurul6_pratik_tbik_saat+donem3.kurul6_pratik_tmik_saat+donem3.kurul6_pratik_pat_saat;
+const toplam_entegre_saat = donem3.kurul1_entegre_saat+donem3.kurul2_entegre_saat+donem3.kurul3_entegre_saat+donem3.kurul4_entegre_saat+donem3.kurul5_entegre_saat+donem3.kurul6_entegre_saat;
+const hu_toplam_saat = donem3.hasta_hekim_saat+donem3.spak_saat+donem3.tbl_saat+toplam_entegre_saat;
+const akts_toplam = donem3.kurul1_akts+donem3.kurul2_akts+donem3.kurul3_akts+donem3.kurul4_akts+donem3.kurul5_akts+donem3.kurul6_akts+donem3.hekimlik_akts;
+
 function hesapla(){
+    //KSSN1
+    let kurul1_teorik_notu = Number($("#kurul1_teorik").val()),
+        kurul1_entegre_notu = Number($("#kurul1_entegre").val()),
+        kurul1_pratik_tbik_notu = Number($("#kurul1_tbik").val()),
+        kurul1_pratik_tmik_notu = Number($("#kurul1_tmik").val()),
+        kurul1_pratik_pat_notu = Number($("#kurul1_pat").val());
 
-	//Teorik ve Pratik Ders Saatleri Inputlar
-	var kurul1_teorik_sayisi = Number($("#teoriksayi1").val());
-	var kurul1_pratik_sayisi = Number($("#pratiksayi1").val());
+    let kurul1_pratik_notu = (kurul1_pratik_tbik_notu*donem3.kurul1_pratik_tbik_saat+kurul1_pratik_tmik_notu*donem3.kurul1_pratik_tmik_saat+kurul1_pratik_pat_notu*donem3.kurul1_pratik_pat_saat)/(kurul1_toplam_pratik_saat);
+    let kssn1 = (kurul1_teorik_notu*donem3.kurul1_teorik_saat+kurul1_pratik_notu*kurul1_toplam_pratik_saat)/(donem3.kurul1_teorik_saat+kurul1_toplam_pratik_saat);
 
-	var kurul2_teorik_sayisi = Number($("#teoriksayi2").val());
-	var kurul2_pratik_sayisi = Number($("#pratiksayi2").val());
+    $("#kurul1_pratik_notu").html(kurul1_pratik_notu.toFixed(2));
+    $("#kssn1").html(kssn1.toFixed(2));
 
-	var kurul3_teorik_sayisi = Number($("#teoriksayi3").val());
-	var kurul3_pratik_sayisi = Number($("#pratiksayi3").val());
+    //KSSN2
+    let kurul2_teorik_notu = Number($("#kurul2_teorik").val()),
+        kurul2_entegre_notu = Number($("#kurul2_entegre").val()),
+        kurul2_pratik_tbik_notu = Number($("#kurul2_tbik").val()),
+        kurul2_pratik_tmik_notu = Number($("#kurul2_tmik").val()),
+        kurul2_pratik_pat_notu = Number($("#kurul2_pat").val());
 
-	var kurul4_teorik_sayisi = Number($("#teoriksayi4").val());
-	var kurul4_pratik_sayisi = Number($("#pratiksayi4").val());
+    let kurul2_pratik_notu = (kurul2_pratik_tbik_notu*donem3.kurul2_pratik_tbik_saat+kurul2_pratik_tmik_notu*donem3.kurul2_pratik_tmik_saat+kurul2_pratik_pat_notu*donem3.kurul2_pratik_pat_saat)/(kurul2_toplam_pratik_saat);
+    let kssn2 = (kurul2_teorik_notu*donem3.kurul2_teorik_saat+kurul2_pratik_notu*kurul2_toplam_pratik_saat)/(donem3.kurul2_teorik_saat+kurul2_toplam_pratik_saat);
 
-	var kurul5_teorik_sayisi = Number($("#teoriksayi5").val());
-	var kurul5_pratik_sayisi = Number($("#pratiksayi5").val());
+    $("#kurul2_pratik_notu").html(kurul2_pratik_notu.toFixed(2));
+    $("#kssn2").html(kssn2.toFixed(2));
 
-	var kurul6_teorik_sayisi = Number($("#teoriksayi6").val());
-	var kurul6_pratik_sayisi = Number($("#pratiksayi6").val());
+    //KSSN3
+    let kurul3_teorik_notu = Number($("#kurul3_teorik").val()),
+        kurul3_entegre_notu = Number($("#kurul3_entegre").val()),
+        kurul3_pratik_tbik_notu = Number($("#kurul3_tbik").val()),
+        kurul3_pratik_tmik_notu = Number($("#kurul3_tmik").val()),
+        kurul3_pratik_pat_notu = Number($("#kurul3_pat").val());
 
-	//Inputlar
-	var kurul1_teorik = Number($("#kurul1").val());
-	var kurul1_pratik = Number($("#pratik1").val());
+    let kurul3_pratik_notu = (kurul3_pratik_tbik_notu*donem3.kurul3_pratik_tbik_saat+kurul3_pratik_tmik_notu*donem3.kurul3_pratik_tmik_saat+kurul3_pratik_pat_notu*donem3.kurul3_pratik_pat_saat)/(kurul3_toplam_pratik_saat);
+    let kssn3 = (kurul3_teorik_notu*donem3.kurul3_teorik_saat+kurul3_pratik_notu*kurul3_toplam_pratik_saat)/(donem3.kurul3_teorik_saat+kurul3_toplam_pratik_saat);
 
-	var kurul2_teorik = Number($("#kurul2").val());
-	var kurul2_pratik = Number($("#pratik2").val());
+    $("#kurul3_pratik_notu").html(kurul3_pratik_notu.toFixed(2));
+    $("#kssn3").html(kssn3.toFixed(2));
 
-	var kurul3_teorik = Number($("#kurul3").val());
-	var kurul3_pratik = Number($("#pratik3").val());
+    //KSSN4
+    let kurul4_teorik_notu = Number($("#kurul4_teorik").val()),
+        kurul4_entegre_notu = Number($("#kurul4_entegre").val()),
+        kurul4_pratik_tbik_notu = Number($("#kurul4_tbik").val()),
+        kurul4_pratik_tmik_notu = Number($("#kurul4_tmik").val()),
+        kurul4_pratik_pat_notu = Number($("#kurul4_pat").val());
 
-	var kurul4_teorik = Number($("#kurul4").val());
-	var kurul4_pratik = Number($("#pratik4").val());
+    let kurul4_pratik_notu = (kurul4_pratik_tbik_notu*donem3.kurul4_pratik_tbik_saat+kurul4_pratik_tmik_notu*donem3.kurul4_pratik_tmik_saat+kurul4_pratik_pat_notu*donem3.kurul4_pratik_pat_saat)/(kurul4_toplam_pratik_saat);
+    let kssn4 = (kurul4_teorik_notu*donem3.kurul4_teorik_saat+kurul4_pratik_notu*kurul4_toplam_pratik_saat)/(donem3.kurul4_teorik_saat+kurul4_toplam_pratik_saat);
 
-	var kurul5_teorik = Number($("#kurul5").val());
-	var kurul5_pratik = Number($("#pratik5").val());
+    $("#kurul4_pratik_notu").html(kurul4_pratik_notu.toFixed(2));
+    $("#kssn4").html(kssn4.toFixed(2));
 
-	var kurul6_teorik = Number($("#kurul6").val());
-	var kurul6_pratik = Number($("#pratik6").val());
+    //KSSN5
+    let kurul5_teorik_notu = Number($("#kurul5_teorik").val()),
+        kurul5_entegre_notu = Number($("#kurul5_entegre").val()),
+        kurul5_pratik_tbik_notu = Number($("#kurul5_tbik").val()),
+        kurul5_pratik_tmik_notu = Number($("#kurul5_tmik").val()),
+        kurul5_pratik_pat_notu = Number($("#kurul5_pat").val());
 
-	var hekimlik = Number($("#hekimlik").val());
+    let kurul5_pratik_notu = (kurul5_pratik_tbik_notu*donem3.kurul5_pratik_tbik_saat+kurul5_pratik_tmik_notu*donem3.kurul5_pratik_tmik_saat+kurul5_pratik_pat_notu*donem3.kurul5_pratik_pat_saat)/(kurul5_toplam_pratik_saat);
+    let kssn5 = (kurul5_teorik_notu*donem3.kurul5_teorik_saat+kurul5_pratik_notu*kurul5_toplam_pratik_saat)/(donem3.kurul5_teorik_saat+kurul5_toplam_pratik_saat);
 
-	var final1 = Number($("#final1").val());
-	var final2 = Number($("#final2").val());
+    $("#kurul5_pratik_notu").html(kurul5_pratik_notu.toFixed(2));
+    $("#kssn5").html(kssn5.toFixed(2));
 
-	//KSSN Hesapla
-	var kssn1 = ( (kurul1_teorik_sayisi*kurul1_teorik) + (kurul1_pratik_sayisi*kurul1_pratik) ) / (kurul1_teorik_sayisi+kurul1_pratik_sayisi);
-	$("#kssn1").html(kssn1.toFixed(2));
-	$("#kssn1_ort").html(kssn1.toFixed(2));
+    //KSSN6
+    let kurul6_teorik_notu = Number($("#kurul6_teorik").val()),
+        kurul6_entegre_notu = Number($("#kurul6_entegre").val()),
+        kurul6_pratik_tbik_notu = Number($("#kurul6_tbik").val()),
+        kurul6_pratik_tmik_notu = Number($("#kurul6_tmik").val()),
+        kurul6_pratik_pat_notu = Number($("#kurul6_pat").val());
 
-	var kssn2 = ( (kurul2_teorik_sayisi*kurul2_teorik) + (kurul2_pratik_sayisi*kurul2_pratik) ) / (kurul2_teorik_sayisi+kurul2_pratik_sayisi);
-	$("#kssn2").html(kssn2.toFixed(2));
-	$("#kssn2_ort").html( ((kssn1+kssn2)/2).toFixed(2) );
+    let kurul6_pratik_notu = (kurul6_pratik_tbik_notu*donem3.kurul6_pratik_tbik_saat+kurul6_pratik_tmik_notu*donem3.kurul6_pratik_tmik_saat+kurul6_pratik_pat_notu*donem3.kurul6_pratik_pat_saat)/(kurul6_toplam_pratik_saat);
+    let kssn6 = (kurul6_teorik_notu*donem3.kurul6_teorik_saat+kurul6_pratik_notu*kurul6_toplam_pratik_saat)/(donem3.kurul6_teorik_saat+kurul6_toplam_pratik_saat);
 
-	var kssn3 = ( (kurul3_teorik_sayisi*kurul3_teorik) + (kurul3_pratik_sayisi*kurul3_pratik) ) / (kurul3_teorik_sayisi+kurul3_pratik_sayisi);
-	$("#kssn3").html(kssn3.toFixed(2));
-	$("#kssn3_ort").html( ((kssn1+kssn2+kssn3)/3).toFixed(2) );
+    $("#kurul6_pratik_notu").html(kurul6_pratik_notu.toFixed(2));
+    $("#kssn6").html(kssn6.toFixed(2));
 
-	var kssn4 = ( (kurul4_teorik_sayisi*kurul4_teorik) + (kurul4_pratik_sayisi*kurul4_pratik) ) / (kurul4_teorik_sayisi+kurul4_pratik_sayisi);
-	$("#kssn4").html(kssn4.toFixed(2));
-	$("#kssn4_ort").html( ((kssn1+kssn2+kssn3+kssn4)/4).toFixed(2) );
+    //Entegre Notu
+    let entegre = (kurul1_entegre_notu*donem3.kurul1_entegre_saat+kurul2_entegre_notu*donem3.kurul2_entegre_saat+kurul3_entegre_notu*donem3.kurul3_entegre_saat+kurul4_entegre_notu*donem3.kurul4_entegre_saat+kurul5_entegre_notu*donem3.kurul5_entegre_saat+kurul6_entegre_notu*donem3.kurul6_entegre_saat)/(toplam_entegre_saat);
+    $("#entegre").html(entegre.toFixed(2));
 
-	var kssn5 = ( (kurul5_teorik_sayisi*kurul5_teorik) + (kurul5_pratik_sayisi*kurul5_pratik) ) / (kurul5_teorik_sayisi+kurul5_pratik_sayisi);
-	$("#kssn5").html(kssn5.toFixed(2));
-	$("#kssn5_ort").html( ((kssn1+kssn2+kssn3+kssn4+kssn5)/5).toFixed(2) );
+    //Hekimlik Uygulaması (HU) Hesapla
+    let hastahekim = Number($("#hasta-hekim").val()),
+        spak = Number($("#spak").val()),
+        tbl = Number($("#tbl").val());
 
-	var kssn6 = ( (kurul6_teorik_sayisi*kurul6_teorik) + (kurul6_pratik_sayisi*kurul6_pratik) ) / (kurul6_teorik_sayisi+kurul6_pratik_sayisi);
-	$("#kssn6").html(kssn6.toFixed(2));
-	$("#kssn6_ort").html( ((kssn1+kssn2+kssn3+kssn4+kssn5+kssn6)/6).toFixed(2) );
+    let hu = (entegre*toplam_entegre_saat+hastahekim*donem3.hasta_hekim_saat+spak*donem3.spak_saat+tbl*donem3.tbl_saat)/(hu_toplam_saat);
+    $("#hu").html(hu.toFixed(2));
 
-	//Yıl İçi Değerlendirme Notu Hesapla
-	var yidn = ( (kurul1_akts*kssn1) + (kurul2_akts*kssn2) + (kurul3_akts*kssn3) + (kurul4_akts*kssn4) + (kurul5_akts*kssn5) + (kurul6_akts*kssn6) + (hekimlik*hekimlik_akts) ) / ( kurul1_akts+kurul2_akts+kurul3_akts+kurul4_akts+kurul5_akts+kurul6_akts+hekimlik_akts );
-	$("#yidn").html(yidn.toFixed(2));
+    //Yıl İçi Değerlendirme Notu Hesapla
+    let yidn = (kssn1*donem3.kurul1_akts+kssn2*donem3.kurul2_akts+kssn3*donem3.kurul3_akts+kssn4*donem3.kurul4_akts+kssn5*donem3.kurul5_akts+kssn6*donem3.kurul6_akts+hu*donem3.hekimlik_akts)/(akts_toplam);
+    $("#yidn").html(yidn.toFixed(2));
 
-	//Sınıf Geçme Notu Hesapla
-	var final_ortalama = (final1+final2)/2;
-	var sinif_gecme_notu = (yidn*0.65)+(final_ortalama*0.35);
-	$("#sgn").html(sinif_gecme_notu.toFixed(2));
+    //Sınıf Geçme Notu Hesapla
+    let final = Number($("#final").val());
+    let sgn = yidn*0.65+final*0.35;
+    $("#sgn").html(sgn.toFixed(2));
 
-	//Finalden Alman Gereken Not Hesapla
-	var alman_gereken = ( 59.5 - (yidn*0.65) ) / 0.35;
-	$("#gecmek_icin").html(alman_gereken.toFixed(2));
-	
-	//Geçme Durumunu Göster
+    //Finalden Alman Gereken Not
+    let alman_gereken = ( 59.5 - (yidn*0.65) ) / 0.35;
+    $("#alman_gereken").html(alman_gereken.toFixed(2));
+
+    //Geçme Durumunu Göster
 	//önce finalli
-
-	if( sinif_gecme_notu >= 59.5 ){
+	if( sgn >= 59.5 ){
 		$("#durum").html(gectin);
 	}else{
 		$("#durum").html(kaldin);
@@ -565,7 +642,7 @@ function hesapla(){
 
 		if( yidn >= 79.5 ){
 			$("#durum").html(finalsiz);
-			$("#gecmek_icin").html("0.00");
+			$("#alman_gereken").html("0.00");
 			$("#sgn").html(yidn.toFixed(2));
 		}
 
@@ -573,238 +650,64 @@ function hesapla(){
 
 }
 
+function createCookies(){
+    $("input[type=number]").each(function(){
+        let input_id = $(this).attr("id");
+        let input_val = Number($(this).val());
+        Cookies.set(cookie_prefix+input_id, input_val, { expires: cookie_expires, path: cookie_path });
+    });
+}
+
+function getCookies(){
+    let cookies = Cookies.get();
+    Object.keys(cookies).forEach(key => {
+        let input_id = key;
+        input_id = input_id.substring(4);
+        let input_value = cookies[key];
+        if(input_value != "0"){
+            $("#"+input_id).not("input[disabled=disabled]").val(input_value);
+            hesapla();
+        }
+    })
+}
+
+function deleteCookies(){
+    $("input[type=number]").each(function(){
+        let input_id = $(this).attr("id");
+        Cookies.remove(cookie_prefix+input_id, { path: cookie_path });
+    });
+}
+
+function resetValues(){
+    $("input[type=number]").val("");
+    deleteCookies();
+    hesapla();
+}
+
 $(document).ready(function(){
-
-	Swal.fire({
-	  title: 'DUYURU',
-	  html: '<p style="text-align:left;font-size:17px;">Herkese merhaba değerli ÇÜTF Not Hesaplama Sistemi kullanıcıları, öncelikle bu sistemi kâr amacı gütmeden tamamen okul arkadaşlarıma kolaylık sağlamak adına kurduğum <i>2018 yılından bu yana</i> benimle birlikte bu sistemin gelişmesine katkıda bulunan ve sistemi kullanan tüm arkadaşlarıma <b>sonsuz teşekkürlerimi</b> sunuyorum. Sizin de bildiğiniz üzere yakın zamanda Dekanlık bu sisteme <i>benzer bir sistem</i> kuracağını duyurdu :) Geç verilen bir karar olsa da atılması gereken bir adımdı. Kendi sistemim hakkında yetkilileri bilgilendirmek ve yeni mevzuattaki eksikleri açığa kavuşturmak adına yaptığım Dekanlık ziyaretinde benim yaptığım bu sistemin <strong>"etik olmadığı"</strong> söylendi. Böyle bir tepki yerine kendi öğrencilerinin yaptığı halihazırda var olan bu sisteme destek olup resmileştirmelerini ve daha açık bir mevzuat hazırlamalarını beklerdim ama maalesef her zaman işler bu şekilde yürümüyor. Bu sistemi elimden geldiğince devam ettirmeye ve sizlerden aldığım geri dönüşlerle güncellemeye devam edeceğim. Umarım sistem bu 4 yıllık süreçte tüm dönemlere faydalı olabilmiştir. Herkese tıp fakültesi eğitim hayatlarında bol <strong>"GEÇTİN"</strong>li yıllar dilerim. İsteklerinizi <a href="mailto:dr@seckinpoyraz.com">dr@seckinpoyraz.com</a> adresinden bana iletmeye devam edebilirsiniz. Teşekkürler.</p>',
-	  showCloseButton: true,
-	  confirmButtonText: 'Teşekkürler!'
-	});
-
-	$.get("https://seckinpoyraz.com/redd.html", function(data){
-		$("#sorumlulukreddi").html(data);
-	});
-
-	var c_kom1 = Cookies.get(cookie_prefix+"kom1"),
-		c_prat1 = Cookies.get(cookie_prefix+"prat1"),
-		c_kom2 = Cookies.get(cookie_prefix+"kom2"),
-		c_prat2 = Cookies.get(cookie_prefix+"prat2"),
-		c_kom3 = Cookies.get(cookie_prefix+"kom3"),
-		c_prat3 = Cookies.get(cookie_prefix+"prat3"),
-		c_kom4 = Cookies.get(cookie_prefix+"kom4"),
-		c_prat4 = Cookies.get(cookie_prefix+"prat4"),
-		c_kom5 = Cookies.get(cookie_prefix+"kom5"),
-		c_prat5 = Cookies.get(cookie_prefix+"prat5"),
-		c_kom6 = Cookies.get(cookie_prefix+"kom6"),
-		c_prat6 = Cookies.get(cookie_prefix+"prat6"),
-		c_hekim = Cookies.get(cookie_prefix+"hekim"),
-		c_fin1 = Cookies.get(cookie_prefix+"fin1"),
-		c_fin2 = Cookies.get(cookie_prefix+"fin2"),
-		c_kom1_teorik = Cookies.get(cookie_prefix+"kom1_teorik"),
-		c_kom1_pratik = Cookies.get(cookie_prefix+"kom1_pratik"),
-		c_kom2_teorik = Cookies.get(cookie_prefix+"kom2_teorik"),
-		c_kom2_pratik = Cookies.get(cookie_prefix+"kom2_pratik"),
-		c_kom3_teorik = Cookies.get(cookie_prefix+"kom3_teorik"),
-		c_kom3_pratik = Cookies.get(cookie_prefix+"kom3_pratik"),
-		c_kom4_teorik = Cookies.get(cookie_prefix+"kom4_teorik"),
-		c_kom4_pratik = Cookies.get(cookie_prefix+"kom4_pratik"),
-		c_kom5_teorik = Cookies.get(cookie_prefix+"kom5_teorik"),
-		c_kom5_pratik = Cookies.get(cookie_prefix+"kom5_pratik"),
-		c_kom6_teorik = Cookies.get(cookie_prefix+"kom6_teorik"),
-		c_kom6_pratik = Cookies.get(cookie_prefix+"kom6_pratik");
-	
-	if( typeof c_kom1 !== "undefined" ){
-		$("#kurul1").val(c_kom1);
-		hesapla();
-	}
-	if( typeof c_kom2 !== "undefined" ){
-		$("#kurul2").val(c_kom2);
-		hesapla();
-	}
-	if( typeof c_kom3 !== "undefined" ){
-		$("#kurul3").val(c_kom3);
-		hesapla();
-	}
-	if( typeof c_kom4 !== "undefined" ){
-		$("#kurul4").val(c_kom4);
-		hesapla();
-	}
-	if( typeof c_kom5 !== "undefined" ){
-		$("#kurul5").val(c_kom5);
-		hesapla();
-	}
-	if( typeof c_kom6 !== "undefined" ){
-		$("#kurul6").val(c_kom6);
-		hesapla();
-	}
-	if( typeof c_hekim !== "undefined" ){
-		$("#hekimlik").val(c_hekim);
-		hesapla();
-	}
-	if( typeof c_prat1 !== "undefined" ){
-		$("#pratik1").val(c_prat1);
-		hesapla();
-	}
-	if( typeof c_prat2 !== "undefined" ){
-		$("#pratik2").val(c_prat2);
-		hesapla();
-	}
-	if( typeof c_prat3 !== "undefined" ){
-		$("#pratik3").val(c_prat3);
-		hesapla();
-	}
-	if( typeof c_prat4 !== "undefined" ){
-		$("#pratik4").val(c_prat4);
-		hesapla();
-	}
-	if( typeof c_prat5 !== "undefined" ){
-		$("#pratik5").val(c_prat5);
-		hesapla();
-	}
-	if( typeof c_prat6 !== "undefined" ){
-		$("#pratik6").val(c_prat6);
-		hesapla();
-	}
-	if( typeof c_fin1 !== "undefined" ){
-		$("#final1").val(c_fin1);
-		hesapla();
-	}
-	if( typeof c_fin2 !== "undefined" ){
-		$("#final2").val(c_fin2);
-		hesapla();
-	}
-	if( typeof c_kom1_teorik !== "undefined" ){
-		$("#teoriksayi1").val(c_kom1_teorik);
-		hesapla();
-	}
-	if( typeof c_kom1_pratik !== "undefined" ){
-		$("#pratiksayi1").val(c_kom1_pratik);
-		hesapla();
-	}
-	if( typeof c_kom2_teorik !== "undefined" ){
-		$("#teoriksayi2").val(c_kom2_teorik);
-		hesapla();
-	}
-	if( typeof c_kom2_pratik !== "undefined" ){
-		$("#pratiksayi2").val(c_kom2_pratik);
-		hesapla();
-	}
-	if( typeof c_kom3_teorik !== "undefined" ){
-		$("#teoriksayi3").val(c_kom3_teorik);
-		hesapla();
-	}
-	if( typeof c_kom3_pratik !== "undefined" ){
-		$("#pratiksayi3").val(c_kom3_pratik);
-		hesapla();
-	}
-	if( typeof c_kom4_teorik !== "undefined" ){
-		$("#teoriksayi4").val(c_kom4_teorik);
-		hesapla();
-	}
-	if( typeof c_kom4_pratik !== "undefined" ){
-		$("#pratiksayi4").val(c_kom4_pratik);
-		hesapla();
-	}
-	if( typeof c_kom5_teorik !== "undefined" ){
-		$("#teoriksayi5").val(c_kom5_teorik);
-		hesapla();
-	}
-	if( typeof c_kom5_pratik !== "undefined" ){
-		$("#pratiksayi5").val(c_kom5_pratik);
-		hesapla();
-	}
-	if( typeof c_kom6_teorik !== "undefined" ){
-		$("#teoriksayi6").val(c_kom6_teorik);
-		hesapla();
-	}
-	if( typeof c_kom6_pratik !== "undefined" ){
-		$("#pratiksayi6").val(c_kom6_pratik);
-		hesapla();
-	}
-	hesapla();
+    getCookies();
+    hesapla();
 });
 
 $("input[type=number]").on("input", function(){
-	var this_val = $(this).val();
+	let this_val = $(this).val();
 
-	if( !$(this).hasClass("sinput") ){
-		if( this_val < 0 ){
-			$(this).val(0);
-			setCookies();
-			hesapla();
-		}else if(this_val > 100){
-			$(this).val(100);
-			setCookies();
-			hesapla();
-		}else{
-			setCookies();
-			hesapla();
-		}
-	}else{
-		if( this_val < 0 ){
-			$(this).val(0);
-			setCookies();
-			hesapla();
-		}else if(this_val > 1000){
-			$(this).val(1000);
-			setCookies();
-			hesapla();
-		}else{
-			setCookies();
-			hesapla();
-		}
-	}
+	if( this_val < 0 ){
+        $(this).val(0);
+        createCookies();
+        hesapla();
+    }else if(this_val > 100){
+        $(this).val(100);
+        createCookies();
+        hesapla();
+    }else{
+        createCookies();
+        hesapla();
+    }
 	
 });
 
-$("#temizle").click(function(){
-	$("input[type=number]").not(".sinput").val("");
-	Cookies.remove(cookie_prefix+"kom1", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"prat1", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"kom2", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"prat2", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"kom3", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"prat3", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"kom4", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"prat4", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"kom5", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"prat5", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"kom6", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"prat6", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"hekim", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"fin1", { path: cookie_path });
-	Cookies.remove(cookie_prefix+"fin2", { path: cookie_path });
-	hesapla();
-});
-
-$("#sayilarreset").click(function(){
-	$("#teoriksayi1").val(const_kurul1_teorik_sayisi);
-	$("#pratiksayi1").val(const_kurul1_pratik_sayisi);
-	$("#teoriksayi2").val(const_kurul2_teorik_sayisi);
-	$("#pratiksayi2").val(const_kurul2_pratik_sayisi);
-	$("#teoriksayi3").val(const_kurul3_teorik_sayisi);
-	$("#pratiksayi3").val(const_kurul3_pratik_sayisi);
-	$("#teoriksayi4").val(const_kurul4_teorik_sayisi);
-	$("#pratiksayi4").val(const_kurul4_pratik_sayisi);
-	$("#teoriksayi5").val(const_kurul5_teorik_sayisi);
-	$("#pratiksayi5").val(const_kurul5_pratik_sayisi);
-	$("#teoriksayi6").val(const_kurul6_teorik_sayisi);
-	$("#pratiksayi6").val(const_kurul6_pratik_sayisi);
-	Cookies.set(cookie_prefix+"kom1_teorik", const_kurul1_teorik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom1_pratik", const_kurul1_pratik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom2_teorik", const_kurul2_teorik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom2_pratik", const_kurul2_pratik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom3_teorik", const_kurul3_teorik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom3_pratik", const_kurul3_pratik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom4_teorik", const_kurul4_teorik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom4_pratik", const_kurul4_pratik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom5_teorik", const_kurul5_teorik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom5_pratik", const_kurul5_pratik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom6_teorik", const_kurul6_teorik_sayisi, { expires: cookie_expires, path: cookie_path });
-	Cookies.set(cookie_prefix+"kom6_pratik", const_kurul6_pratik_sayisi, { expires: cookie_expires, path: cookie_path });
-	hesapla();
-});
 </script>
+
 </body>
 </html>
