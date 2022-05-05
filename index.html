@@ -662,13 +662,14 @@ function getCookies(){
     let cookies = Cookies.get();
     Object.keys(cookies).forEach(key => {
         let input_id = key;
-        input_id = input_id.substring(4);
+        let first4_letter = input_id.slice(0, 4);
+        let input_id_sliced = input_id.substring(4);
         let input_value = cookies[key];
-        if(input_value != "0"){
-            $("#"+input_id).not("input[disabled=disabled]").val(input_value);
+        if(first4_letter==cookie_prefix && input_value != "0"){
+            $("#"+input_id_sliced).not("input[disabled=disabled]").val(input_value);
             hesapla();
         }
-    })
+    });
 }
 
 function deleteCookies(){
