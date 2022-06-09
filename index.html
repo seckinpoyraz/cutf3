@@ -377,6 +377,14 @@
                     <td>&nbsp;</td>
                 </tr>
                 <tr class="dark2">
+                    <td>AHEK</td>
+                    <td><input type="number" id="ahek" placeholder="0" class="form-control" /></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr class="dark2">
                     <td>SPAK Notu</td>
                     <td><input type="number" id="spak" placeholder="0" class="form-control" /></td>
                     <td>&nbsp;</td>
@@ -511,6 +519,7 @@ const donem3 = {
     kurul6_pratik_pat_saat: 4,
 
     hasta_hekim_saat: 24,
+    ahek_saat: 2,
     spak_saat: 108,
     tbl_saat: 14
 }
@@ -522,7 +531,7 @@ const kurul4_toplam_pratik_saat = donem3.kurul4_pratik_tbik_saat+donem3.kurul4_p
 const kurul5_toplam_pratik_saat = donem3.kurul5_pratik_tbik_saat+donem3.kurul5_pratik_tmik_saat+donem3.kurul5_pratik_pat_saat;
 const kurul6_toplam_pratik_saat = donem3.kurul6_pratik_tbik_saat+donem3.kurul6_pratik_tmik_saat+donem3.kurul6_pratik_pat_saat;
 const toplam_entegre_saat = donem3.kurul1_entegre_saat+donem3.kurul2_entegre_saat+donem3.kurul3_entegre_saat+donem3.kurul4_entegre_saat+donem3.kurul5_entegre_saat+donem3.kurul6_entegre_saat;
-const hu_toplam_saat = donem3.hasta_hekim_saat+donem3.spak_saat+donem3.tbl_saat+toplam_entegre_saat;
+const hu_toplam_saat = donem3.hasta_hekim_saat+donem3.ahek_saat+donem3.spak_saat+donem3.tbl_saat+toplam_entegre_saat;
 const akts_toplam = donem3.kurul1_akts+donem3.kurul2_akts+donem3.kurul3_akts+donem3.kurul4_akts+donem3.kurul5_akts+donem3.kurul6_akts+donem3.hekimlik_akts;
 
 function hesapla(){
@@ -610,10 +619,11 @@ function hesapla(){
 
     //Hekimlik Uygulaması (HU) Hesapla
     let hastahekim = Number($("#hasta-hekim").val()),
+        ahek = Number($("#ahek").val()),
         spak = Number($("#spak").val()),
         tbl = Number($("#tbl").val());
 
-    let hu = (entegre*toplam_entegre_saat+hastahekim*donem3.hasta_hekim_saat+spak*donem3.spak_saat+tbl*donem3.tbl_saat)/(hu_toplam_saat);
+    let hu = (entegre*toplam_entegre_saat+hastahekim*donem3.hasta_hekim_saat+ahek*donem3.ahek_saat+spak*donem3.spak_saat+tbl*donem3.tbl_saat)/(hu_toplam_saat);
     $("#hu").html(hu.toFixed(2));
 
     //Yıl İçi Değerlendirme Notu Hesapla
